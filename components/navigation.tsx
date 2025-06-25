@@ -19,6 +19,20 @@ const navigationItems = [
       { name: "Attendance System", href: "/attendance-system" },
     ],
   },
+  {
+    name: "Training",
+    href: "#",
+    submenu: [
+      { name: "Kelas Online", href: "/training/kelas-online" },
+      { name: "Kelas Offline", href: "/training/kelas-offline" },
+      { name: "Kelas Hybrid", href: "/training/kelas-hybrid" },
+    ],
+  },
+  {
+    name: "Download",
+    href: "#",
+    submenu: [{ name: "Free Ebook", href: "/download/free-ebook" }],
+  },
   { name: "Tentang Kami", href: "/tentang-kami" },
   { name: "Portfolio", href: "/portfolio" },
   { name: "Testimoni", href: "/testimoni" },
