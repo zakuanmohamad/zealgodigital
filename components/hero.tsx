@@ -1,10 +1,17 @@
 "use client"
 
 import { Button } from "@/components/ui/button"
-import { ArrowRight, Zap } from "lucide-react"
+import { ArrowRight, Zap, MessageCircle } from "lucide-react"
 import Link from "next/link"
 
 export function Hero() {
+  const handleWhatsAppContact = () => {
+    const message =
+      "Halo ZealGoDigital! Saya berminat untuk mengetahui lebih lanjut tentang perkhidmatan transformasi digital anda."
+    const encodedMessage = encodeURIComponent(message)
+    window.open(`https://zealgodigitaltanya.wasap.my/?text=${encodedMessage}`, "_blank")
+  }
+
   return (
     <section className="relative min-h-screen flex items-center justify-center bg-gradient-to-br from-black via-red-950 to-black overflow-hidden">
       <div className="absolute inset-0 bg-[url('/hero-bg.png')] bg-cover bg-center opacity-30" />
@@ -25,12 +32,14 @@ export function Hero() {
           pembayaran QR, pemasangan CCTV, dan sistem kehadiran digital.
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
-          <Link href="/hubungi-kami">
-            <Button size="lg" className="bg-red-600 hover:bg-red-700 text-white px-8 py-4 text-lg">
-              Mulakan Transformasi
-              <ArrowRight className="ml-2 h-5 w-5" />
-            </Button>
-          </Link>
+          <Button
+            onClick={handleWhatsAppContact}
+            size="lg"
+            className="bg-red-600 hover:bg-red-700 text-white px-8 py-4 text-lg"
+          >
+            Mulakan Transformasi
+            <ArrowRight className="ml-2 h-5 w-5" />
+          </Button>
           <Link href="/tentang-kami">
             <Button
               size="lg"
@@ -40,6 +49,18 @@ export function Hero() {
               Ketahui Lebih Lanjut
             </Button>
           </Link>
+        </div>
+
+        {/* Quick WhatsApp Button */}
+        <div className="mt-8">
+          <Button
+            onClick={() => window.open("https://zealgodigitaltanya.wasap.my/", "_blank")}
+            variant="outline"
+            className="border-green-500 text-green-500 hover:bg-green-500 hover:text-white"
+          >
+            <MessageCircle className="h-4 w-4 mr-2" />
+            WhatsApp Kami
+          </Button>
         </div>
       </div>
       <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-black to-transparent" />

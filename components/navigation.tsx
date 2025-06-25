@@ -4,7 +4,7 @@ import { useState } from "react"
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet"
-import { Menu, Zap } from "lucide-react"
+import { Menu, Zap, MessageCircle } from "lucide-react"
 
 const navigationItems = [
   { name: "Beranda", href: "/" },
@@ -28,6 +28,12 @@ const navigationItems = [
 
 export function Navigation() {
   const [isOpen, setIsOpen] = useState(false)
+
+  const handleQuoteRequest = () => {
+    const message = "Halo ZealGoDigital! Saya ingin mendapatkan sebut harga untuk perkhidmatan anda."
+    const encodedMessage = encodeURIComponent(message)
+    window.open(`https://zealgodigitaltanya.wasap.my/?text=${encodedMessage}`, "_blank")
+  }
 
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 bg-black/95 backdrop-blur-sm border-b border-red-900">
@@ -67,8 +73,9 @@ export function Navigation() {
                 )}
               </div>
             ))}
-            <Button size="sm" className="bg-red-600 hover:bg-red-700 text-white">
-              Dapatkan Sebut Harga
+            <Button onClick={handleQuoteRequest} size="sm" className="bg-red-600 hover:bg-red-700 text-white">
+              <MessageCircle className="h-4 w-4 mr-1" />
+              Sebut Harga
             </Button>
           </div>
 
@@ -119,7 +126,10 @@ export function Navigation() {
                     )}
                   </div>
                 ))}
-                <Button className="w-full bg-red-600 hover:bg-red-700 text-white mt-6">Dapatkan Sebut Harga</Button>
+                <Button onClick={handleQuoteRequest} className="w-full bg-red-600 hover:bg-red-700 text-white mt-6">
+                  <MessageCircle className="h-4 w-4 mr-2" />
+                  Dapatkan Sebut Harga
+                </Button>
               </div>
             </SheetContent>
           </Sheet>

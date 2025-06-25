@@ -1,8 +1,10 @@
+"use client"
+
 import { Navigation } from "@/components/navigation"
 import { Footer } from "@/components/footer"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
-import { Camera, Shield, Monitor, Cloud, Eye, Lock, Check, Phone } from "lucide-react"
+import { Camera, Shield, Monitor, Cloud, Eye, Lock, Check, Phone, MessageCircle } from "lucide-react"
 
 export default function CCTVInstallation() {
   const features = [
@@ -96,6 +98,29 @@ export default function CCTVInstallation() {
     },
   ]
 
+  const handlePackageInquiry = (packageTitle: string, price: string) => {
+    const message = `Halo ZealGoDigital!
+
+Saya berminat dengan pakej CCTV berikut:
+
+*Pakej:* ${packageTitle}
+*Harga:* ${price}
+
+Boleh saya dapatkan maklumat lanjut dan jadual pemasangan?
+
+Terima kasih!`
+
+    const encodedMessage = encodeURIComponent(message)
+    window.open(`https://zealgodigitaltanya.wasap.my/?text=${encodedMessage}`, "_blank")
+  }
+
+  const handleGeneralInquiry = () => {
+    const message =
+      "Halo ZealGoDigital! Saya ingin mendapatkan konsultasi dan sebut harga untuk sistem CCTV. Boleh bantu saya?"
+    const encodedMessage = encodeURIComponent(message)
+    window.open(`https://zealgodigitaltanya.wasap.my/?text=${encodedMessage}`, "_blank")
+  }
+
   return (
     <main className="min-h-screen bg-black">
       <Navigation />
@@ -117,7 +142,8 @@ export default function CCTVInstallation() {
           <p className="text-xl text-gray-400 max-w-3xl mx-auto mb-8">
             Sistem keselamatan CCTV profesional untuk melindungi premis perniagaan anda dengan teknologi terkini.
           </p>
-          <Button size="lg" className="bg-red-600 hover:bg-red-700 text-white">
+          <Button onClick={handleGeneralInquiry} size="lg" className="bg-red-600 hover:bg-red-700 text-white">
+            <MessageCircle className="h-5 w-5 mr-2" />
             Dapatkan Sebut Harga
           </Button>
         </div>
@@ -185,9 +211,12 @@ export default function CCTVInstallation() {
                     ))}
                   </ul>
 
-                  <Button className="w-full bg-red-600 hover:bg-red-700 text-white">
-                    <Phone className="h-4 w-4 mr-2" />
-                    Hubungi Sekarang
+                  <Button
+                    onClick={() => handlePackageInquiry(pkg.title, pkg.price)}
+                    className="w-full bg-red-600 hover:bg-red-700 text-white"
+                  >
+                    <MessageCircle className="h-4 w-4 mr-2" />
+                    Tanya Pakej Ini
                   </Button>
                 </CardContent>
               </Card>
@@ -278,15 +307,17 @@ export default function CCTVInstallation() {
             Hubungi kami hari ini untuk mendapatkan konsultasi percuma dan sebut harga terbaik untuk sistem CCTV anda.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button size="lg" className="bg-red-600 hover:bg-red-700 text-white">
+            <Button onClick={handleGeneralInquiry} size="lg" className="bg-red-600 hover:bg-red-700 text-white">
               <Phone className="h-5 w-5 mr-2" />
               Hubungi Kami Sekarang
             </Button>
             <Button
+              onClick={() => window.open("https://zealgodigitaltanya.wasap.my/", "_blank")}
               size="lg"
               variant="outline"
-              className="border-red-500 text-red-500 hover:bg-red-500 hover:text-white"
+              className="border-green-500 text-green-500 hover:bg-green-500 hover:text-white"
             >
+              <MessageCircle className="h-5 w-5 mr-2" />
               WhatsApp Kami
             </Button>
           </div>
