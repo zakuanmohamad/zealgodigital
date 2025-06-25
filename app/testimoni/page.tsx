@@ -11,7 +11,7 @@ export default function Testimoni() {
       rating: 5,
       comment:
         "Sistem POS dari ZealGoDigital sangat membantu dalam menguruskan restoran saya. Sekarang saya boleh terima pembayaran QR dari semua platform. Jualan meningkat 40% sejak menggunakan sistem ini!",
-      image: "/placeholder.svg?height=80&width=80",
+      image: "/testimonials/pak-ali.jpg",
     },
     {
       name: "Siti Aminah",
@@ -19,7 +19,7 @@ export default function Testimoni() {
       rating: 5,
       comment:
         "CCTV dan sistem attendance yang dipasang sangat berkualiti. Saya rasa lebih selamat dan mudah untuk monitor pekerja. Service after-sales pun sangat baik!",
-      image: "/placeholder.svg?height=80&width=80",
+      image: "/testimonials/siti-aminah.jpg",
     },
     {
       name: "Azman Ibrahim",
@@ -27,7 +27,7 @@ export default function Testimoni() {
       rating: 5,
       comment:
         "Digital marketing campaign yang dijalankan berjaya meningkatkan pelanggan saya dengan drastik. Sekarang bengkel saya selalu penuh dengan tempahan. Terima kasih ZealGoDigital!",
-      image: "/placeholder.svg?height=80&width=80",
+      image: "/testimonials/azman-ibrahim.jpg",
     },
     {
       name: "Dr. Sarah",
@@ -35,7 +35,7 @@ export default function Testimoni() {
       rating: 5,
       comment:
         "Transformasi digital yang lengkap untuk klinik saya. Dari sistem appointment hingga digital marketing, semuanya berjalan dengan lancar. Highly recommended!",
-      image: "/placeholder.svg?height=80&width=80",
+      image: "/testimonials/dr-sarah.jpg",
     },
     {
       name: "Farah Fashionista",
@@ -43,7 +43,7 @@ export default function Testimoni() {
       rating: 5,
       comment:
         "E-commerce platform yang dibina sangat user-friendly. Pelanggan mudah untuk beli online dan sistem POS untuk kedai fizikal pun sangat efficient. Sales online meningkat 300%!",
-      image: "/placeholder.svg?height=80&width=80",
+      image: "/testimonials/farah-fashionista.jpg",
     },
     {
       name: "Ahmad Arkitek",
@@ -51,7 +51,7 @@ export default function Testimoni() {
       rating: 5,
       comment:
         "Sistem keselamatan dan attendance yang dipasang sangat canggih. Boleh monitor dari phone dan laporan attendance automatik. Sangat membantu untuk HR management.",
-      image: "/placeholder.svg?height=80&width=80",
+      image: "/testimonials/ahmad-arkitek.jpg",
     },
   ]
 
@@ -82,7 +82,7 @@ export default function Testimoni() {
                     <img
                       src={testimonial.image || "/placeholder.svg"}
                       alt={testimonial.name}
-                      className="w-12 h-12 rounded-full mr-4"
+                      className="w-12 h-12 rounded-full mr-4 object-cover"
                     />
                     <div>
                       <h3 className="text-white font-semibold">{testimonial.name}</h3>

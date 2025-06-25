@@ -52,7 +52,7 @@ export default function CCTVInstallation() {
         "Installation & Programming",
         "1 Year Warranty",
       ],
-      image: "/placeholder.svg?height=300&width=400",
+      image: "/cctv-4ch.jpg",
     },
     {
       title: "6 Channel Premium",
@@ -72,7 +72,7 @@ export default function CCTVInstallation() {
         "Installation & Programming",
         "1 Year Warranty",
       ],
-      image: "/placeholder.svg?height=300&width=400",
+      image: "/cctv-6ch.jpg",
     },
     {
       title: "8 Channel Premium",
@@ -92,7 +92,7 @@ export default function CCTVInstallation() {
         "Installation & Programming",
         "1 Year Warranty",
       ],
-      image: "/placeholder.svg?height=300&width=400",
+      image: "/cctv-8ch.jpg",
     },
   ]
 
@@ -101,8 +101,11 @@ export default function CCTVInstallation() {
       <Navigation />
 
       {/* Hero Section */}
-      <section className="pt-24 pb-16 bg-gradient-to-br from-black via-red-950 to-black">
-        <div className="container mx-auto px-4 text-center">
+      <section className="relative pt-24 pb-16 bg-gradient-to-br from-black via-red-950 to-black overflow-hidden">
+        <div className="absolute inset-0 bg-[url('/services/cctv-bg.jpg')] bg-cover bg-center opacity-20" />
+        <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-red-900/20 to-black/80" />
+
+        <div className="relative z-10 container mx-auto px-4 text-center">
           <div className="flex justify-center mb-6">
             <div className="p-4 bg-red-600 rounded-full">
               <Camera className="h-12 w-12 text-white" />
