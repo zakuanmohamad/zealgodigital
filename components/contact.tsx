@@ -192,9 +192,9 @@ Terima kasih!`
                   <div>
                     <h3 className="text-white font-semibold mb-2">Alamat</h3>
                     <p className="text-gray-400">
-                      Guchil Luar, Kuala Krai,
+                      PT 4489, Tingkat Satu, Guchil Luar,
                       <br />
-                      18000 Kuala Krai, Kelantan
+                      18020 Kuala Krai, Kelantan
                     </p>
                   </div>
                 </div>
