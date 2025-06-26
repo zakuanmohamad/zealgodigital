@@ -13,7 +13,7 @@ export default function KelasOffline() {
       description: "Workshop 3 hari intensif untuk menguasai digital marketing dari asas hingga advanced.",
       duration: "3 Hari",
       schedule: "Setiap Sabtu & Ahad",
-      location: "Kuala Krai, Kelantan",
+      location: "Akademi Integriti Insan PLT, Kuala Krai",
       maxStudents: "15 orang",
       price: "RM 899",
       originalPrice: "RM 1299",
@@ -24,7 +24,7 @@ export default function KelasOffline() {
       description: "Hands-on training untuk setup dan pengurusan sistem POS untuk perniagaan.",
       duration: "2 Hari",
       schedule: "Weekdays Available",
-      location: "Kuala Krai, Kelantan",
+      location: "Akademi Integriti Insan PLT, Kuala Krai",
       maxStudents: "10 orang",
       price: "RM 599",
       originalPrice: "RM 899",
@@ -35,7 +35,7 @@ export default function KelasOffline() {
       description: "Kursus praktikal untuk belajar pemasangan dan maintenance sistem CCTV.",
       duration: "2 Hari",
       schedule: "Weekend Batch",
-      location: "Kuala Krai, Kelantan",
+      location: "Akademi Integriti Insan PLT, Kuala Krai",
       maxStudents: "8 orang",
       price: "RM 799",
       originalPrice: "RM 1199",
@@ -46,7 +46,7 @@ export default function KelasOffline() {
       description: "Workshop praktikal menggunakan AI tools untuk meningkatkan produktiviti perniagaan.",
       duration: "1 Hari",
       schedule: "Monthly Sessions",
-      location: "Kuala Krai, Kelantan",
+      location: "Akademi Integriti Insan PLT, Kuala Krai",
       maxStudents: "20 orang",
       price: "RM 399",
       originalPrice: "RM 599",
@@ -196,10 +196,14 @@ Terima kasih!`
             <CardContent className="p-8 text-center">
               <MapPin className="h-12 w-12 text-green-500 mx-auto mb-4" />
               <h3 className="text-white text-xl font-semibold mb-4">ZealGoDigital Training Center</h3>
+              <p className="text-gray-400 mb-2 font-semibold">Akademi Integriti Insan PLT</p>
               <p className="text-gray-400 mb-6">
-                Guchil Luar, Kuala Krai,
+                PT 4489, Tingkat Satu Guchil Luar
                 <br />
-                18000 Kuala Krai, Kelantan
+                18020 Kuala Krai, Kelantan
+              </p>
+              <p className="text-gray-400 mb-6">
+                <strong>Tel Pejabat:</strong> 09-9668789
               </p>
               <div className="space-y-2 text-sm text-gray-400">
                 <p>🚗 Parking tersedia</p>

@@ -18,7 +18,7 @@ export default function FreeEbook() {
       rating: 4.9,
       category: "Digital Transformation",
       level: "Beginner",
-      image: "/placeholder.svg?height=300&width=200",
+      image: "/placeholder.svg?height=300&width=200&text=Digital+Transformation+Guide+SME+Business+Book",
       highlights: ["Strategi Digital", "Implementation Guide", "Case Studies", "ROI Calculator"],
     },
     {
@@ -29,7 +29,7 @@ export default function FreeEbook() {
       rating: 4.8,
       category: "Artificial Intelligence",
       level: "Intermediate",
-      image: "/placeholder.svg?height=300&width=200",
+      image: "/placeholder.svg?height=300&width=200&text=AI+Business+Guide+2024+Artificial+Intelligence+Book",
       highlights: ["AI Tools Review", "Implementation Strategy", "Cost Analysis", "Success Metrics"],
     },
     {
@@ -40,7 +40,7 @@ export default function FreeEbook() {
       rating: 4.7,
       category: "Digital Marketing",
       level: "Intermediate",
-      image: "/placeholder.svg?height=300&width=200",
+      image: "/placeholder.svg?height=300&width=200&text=Digital+Marketing+Strategy+Social+Media+Book",
       highlights: ["Social Media Strategy", "Google Ads Guide", "Content Marketing", "Analytics Setup"],
     },
     {
@@ -51,7 +51,7 @@ export default function FreeEbook() {
       rating: 4.6,
       category: "POS Systems",
       level: "Beginner",
-      image: "/placeholder.svg?height=300&width=200",
+      image: "/placeholder.svg?height=300&width=200&text=POS+System+Point+of+Sale+Business+Guide+Book",
       highlights: ["Feature Comparison", "Pricing Guide", "Implementation Tips", "Vendor Reviews"],
     },
     {
@@ -62,7 +62,7 @@ export default function FreeEbook() {
       rating: 4.8,
       category: "Security Systems",
       level: "Beginner",
-      image: "/placeholder.svg?height=300&width=200",
+      image: "/placeholder.svg?height=300&width=200&text=CCTV+Security+Camera+Surveillance+Planning+Book",
       highlights: ["Security Assessment", "Camera Placement", "Storage Planning", "Budget Guide"],
     },
     {
@@ -73,7 +73,7 @@ export default function FreeEbook() {
       rating: 4.5,
       category: "Payment Systems",
       level: "Beginner",
-      image: "/placeholder.svg?height=300&width=200",
+      image: "/placeholder.svg?height=300&width=200&text=QR+Payment+Digital+Wallet+Integration+Guide+Book",
       highlights: ["Platform Comparison", "Setup Guide", "Security Tips", "Customer Education"],
     },
     {
@@ -84,7 +84,7 @@ export default function FreeEbook() {
       rating: 4.7,
       category: "HR Systems",
       level: "Beginner",
-      image: "/placeholder.svg?height=300&width=200",
+      image: "/placeholder.svg?height=300&width=200&text=Employee+Attendance+HR+System+Biometric+Book",
       highlights: ["System Types", "Implementation", "Policy Creation", "Compliance Guide"],
     },
     {
@@ -95,7 +95,7 @@ export default function FreeEbook() {
       rating: 4.9,
       category: "E-commerce",
       level: "Beginner",
-      image: "/placeholder.svg?height=300&width=200",
+      image: "/placeholder.svg?height=300&width=200&text=E-commerce+Online+Business+Startup+Guide+Book",
       highlights: ["Platform Selection", "Product Strategy", "Marketing Plan", "Operations Guide"],
     },
   ]

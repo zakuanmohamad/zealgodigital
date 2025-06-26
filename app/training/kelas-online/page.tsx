@@ -20,7 +20,7 @@ export default function KelasOnline() {
       rating: 4.9,
       price: "RM 299",
       originalPrice: "RM 499",
-      image: "/placeholder.svg?height=200&width=300",
+      image: "/placeholder.svg?height=200&width=300&text=AI+Artificial+Intelligence+Brain+Circuit+Technology",
       highlights: ["Pengenalan AI", "Machine Learning Basics", "AI Tools", "Practical Applications"],
     },
     {
@@ -33,7 +33,7 @@ export default function KelasOnline() {
       rating: 4.8,
       price: "RM 399",
       originalPrice: "RM 699",
-      image: "/placeholder.svg?height=200&width=300",
+      image: "/placeholder.svg?height=200&width=300&text=AI+Marketing+Digital+Strategy+Analytics+Dashboard",
       highlights: ["AI Marketing Strategy", "Automated Campaigns", "Data Analytics", "ROI Optimization"],
     },
     {
@@ -46,7 +46,7 @@ export default function KelasOnline() {
       rating: 4.7,
       price: "RM 349",
       originalPrice: "RM 599",
-      image: "/placeholder.svg?height=200&width=300",
+      image: "/placeholder.svg?height=200&width=300&text=AI+Design+Creative+Tools+Graphics+Automation",
       highlights: ["AI Design Tools", "Automated Graphics", "Brand Creation", "Creative Workflows"],
     },
     {
@@ -59,7 +59,7 @@ export default function KelasOnline() {
       rating: 4.9,
       price: "RM 499",
       originalPrice: "RM 899",
-      image: "/placeholder.svg?height=200&width=300",
+      image: "/placeholder.svg?height=200&width=300&text=AI+Video+Creation+Editing+Production+Studio",
       highlights: ["AI Video Generation", "Automated Editing", "Script Writing", "Voice Synthesis"],
     },
     {
@@ -72,7 +72,7 @@ export default function KelasOnline() {
       rating: 4.6,
       price: "RM 199",
       originalPrice: "RM 349",
-      image: "/placeholder.svg?height=200&width=300",
+      image: "/placeholder.svg?height=200&width=300&text=Canva+Design+Graphics+Templates+Creative",
       highlights: ["Canva Basics", "Template Mastery", "Brand Kit", "Social Media Graphics"],
     },
     {
@@ -85,7 +85,7 @@ export default function KelasOnline() {
       rating: 4.8,
       price: "RM 349",
       originalPrice: "RM 599",
-      image: "/placeholder.svg?height=200&width=300",
+      image: "/placeholder.svg?height=200&width=300&text=Canva+Pro+Advanced+Design+Professional+Graphics",
       highlights: ["Advanced Features", "Animation", "Team Collaboration", "Brand Management"],
     },
     {
@@ -98,7 +98,7 @@ export default function KelasOnline() {
       rating: 4.7,
       price: "RM 399",
       originalPrice: "RM 699",
-      image: "/placeholder.svg?height=200&width=300",
+      image: "/placeholder.svg?height=200&width=300&text=AI+Ethics+Legal+Compliance+Security+Automation",
       highlights: ["AI Ethics", "Legal Compliance", "Safe Automation", "Risk Management"],
     },
     {
@@ -111,7 +111,7 @@ export default function KelasOnline() {
       rating: 5.0,
       price: "RM 899",
       originalPrice: "RM 1499",
-      image: "/placeholder.svg?height=200&width=300",
+      image: "/placeholder.svg?height=200&width=300&text=AI+Mastery+Expert+Code+Programming+Technology",
       highlights: ["Complete AI Mastery", "Multiple Domains", "Expert Certification", "Lifetime Access"],
     },
     {
@@ -124,7 +124,7 @@ export default function KelasOnline() {
       rating: 4.9,
       price: "RM 1299",
       originalPrice: "RM 1999",
-      image: "/placeholder.svg?height=200&width=300",
+      image: "/placeholder.svg?height=200&width=300&text=Web+Development+AI+Integration+Coding+Programming",
       highlights: ["Web Development", "AI Integration", "Full Stack", "Real Projects"],
     },
     {
@@ -137,7 +137,7 @@ export default function KelasOnline() {
       rating: 4.8,
       price: "RM 299",
       originalPrice: "RM 499",
-      image: "/placeholder.svg?height=200&width=300",
+      image: "/placeholder.svg?height=200&width=300&text=Personal+Development+Success+Motivation+Growth",
       highlights: ["Self Discovery", "Goal Setting", "Mindset Transformation", "Success Strategies"],
     },
     {
@@ -150,7 +150,7 @@ export default function KelasOnline() {
       rating: 4.9,
       price: "RM 399",
       originalPrice: "RM 699",
-      image: "/placeholder.svg?height=200&width=300",
+      image: "/placeholder.svg?height=200&width=300&text=Health+Transformation+Quit+Smoking+Wellness+Recovery",
       highlights: ["Addiction Recovery", "Behavioral Change", "Health Transformation", "Support System"],
     },
   ]

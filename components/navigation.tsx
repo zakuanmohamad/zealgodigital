@@ -7,7 +7,7 @@ import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet"
 import { Menu, Zap, MessageCircle } from "lucide-react"
 
 const navigationItems = [
-  { name: "Beranda", href: "/" },
+  { name: "Home", href: "/" },
   {
     name: "Perkhidmatan",
     href: "#",

@@ -12,9 +12,16 @@ export function Hero() {
     window.open(`https://zealgodigitaltanya.wasap.my/?text=${encodedMessage}`, "_blank")
   }
 
+  const handleGetStarted = () => {
+    const servicesSection = document.getElementById("services-section")
+    if (servicesSection) {
+      servicesSection.scrollIntoView({ behavior: "smooth" })
+    }
+  }
+
   return (
     <section className="relative min-h-screen flex items-center justify-center bg-gradient-to-br from-black via-red-950 to-black overflow-hidden">
-      <div className="absolute inset-0 bg-[url('/hero-bg.png')] bg-cover bg-center opacity-30" />
+      <div className="absolute inset-0 bg-[url('/placeholder.svg?height=1080&width=1920&text=Digital+Transformation+Technology+Background+with+AI+Circuits+and+Data+Streams')] bg-cover bg-center opacity-30" />
       <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-red-900/20 to-black/80" />
 
       <div className="relative z-10 container mx-auto px-4 text-center pt-16">
@@ -33,7 +40,7 @@ export function Hero() {
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <Button
-            onClick={handleWhatsAppContact}
+            onClick={handleGetStarted}
             size="lg"
             className="bg-red-600 hover:bg-red-700 text-white px-8 py-4 text-lg"
           >
