@@ -46,7 +46,7 @@ export default function Training() {
     const message =
       "Halo ZealGoDigital! Saya berminat untuk menyertai program training anda. Boleh saya dapatkan maklumat lanjut?"
     const encodedMessage = encodeURIComponent(message)
-    window.open(`https://zealgodigitaltanya.wasap.my/?text=${encodedMessage}`, "_blank")
+    window.open(`https://wa.me/60182461092?text=${encodedMessage}`, "_blank")
   }
 
   return (

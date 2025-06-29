@@ -59,11 +59,11 @@ Terima kasih!`
     const encodedMessage = encodeURIComponent(message)
 
     // Redirect to WhatsApp
-    window.open(`https://zealgodigitaltanya.wasap.my/?text=${encodedMessage}`, "_blank")
+    window.open(`https://wa.me/60182461092?text=${encodedMessage}`, "_blank")
   }
 
   return (
-    <section className="py-20 bg-gray-900">
+    <section id="contact-section" className="py-20 bg-gray-900">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
@@ -223,7 +223,7 @@ Terima kasih!`
                 <h3 className="text-white font-semibold mb-2">WhatsApp Terus</h3>
                 <p className="text-green-100 mb-4 text-sm">Untuk respons yang lebih pantas</p>
                 <Button
-                  onClick={() => window.open("https://zealgodigitaltanya.wasap.my/", "_blank")}
+                  onClick={() => window.open("https://wa.me/60182461092", "_blank")}
                   className="bg-white text-green-600 hover:bg-green-50 w-full"
                 >
                   Chat WhatsApp Sekarang

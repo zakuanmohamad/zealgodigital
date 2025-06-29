@@ -7,10 +7,11 @@ import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet"
 import { Menu, Zap, MessageCircle } from "lucide-react"
 
 const navigationItems = [
-  { name: "Home", href: "/" },
+  { name: "Home", href: "/", scrollTo: "top" },
   {
     name: "Perkhidmatan",
     href: "#",
+    scrollTo: "services-section",
     submenu: [
       { name: "Online Marketing", href: "/online-marketing" },
       { name: "POS System", href: "/pos-system" },
@@ -37,7 +38,7 @@ const navigationItems = [
   { name: "Portfolio", href: "/portfolio" },
   { name: "Testimoni", href: "/testimoni" },
   { name: "Kerjaya", href: "/kerjaya" },
-  { name: "Hubungi Kami", href: "/hubungi-kami" },
+  { name: "Hubungi Kami", href: "/hubungi-kami", scrollTo: "contact-section" },
 ]
 
 export function Navigation() {
@@ -46,7 +47,20 @@ export function Navigation() {
   const handleQuoteRequest = () => {
     const message = "Halo ZealGoDigital! Saya ingin mendapatkan sebut harga untuk perkhidmatan anda."
     const encodedMessage = encodeURIComponent(message)
-    window.open(`https://zealgodigitaltanya.wasap.my/?text=${encodedMessage}`, "_blank")
+    window.open(`https://wa.me/60182461092?text=${encodedMessage}`, "_blank")
+  }
+
+  const handleScrollToSection = (sectionId: string) => {
+    const section = document.getElementById(sectionId)
+    if (section) {
+      section.scrollIntoView({ behavior: "smooth" })
+      setIsOpen(false) // Close mobile menu after scrolling
+    }
+  }
+
+  const handleScrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: "smooth" })
+    setIsOpen(false)
   }
 
   return (
@@ -81,9 +95,26 @@ export function Navigation() {
                     </div>
                   </div>
                 ) : (
-                  <Link href={item.href} className="text-white hover:text-red-500 transition-colors">
-                    {item.name}
-                  </Link>
+                  <div>
+                    {item.scrollTo ? (
+                      <button
+                        onClick={() => {
+                          if (item.scrollTo === "top") {
+                            handleScrollToTop()
+                          } else {
+                            handleScrollToSection(item.scrollTo)
+                          }
+                        }}
+                        className="text-white hover:text-red-500 transition-colors"
+                      >
+                        {item.name}
+                      </button>
+                    ) : (
+                      <Link href={item.href} className="text-white hover:text-red-500 transition-colors">
+                        {item.name}
+                      </Link>
+                    )}
+                  </div>
                 )}
               </div>
             ))}
@@ -130,13 +161,30 @@ export function Navigation() {
                         </div>
                       </div>
                     ) : (
-                      <Link
-                        href={item.href}
-                        className="block text-white hover:text-red-500 transition-colors py-2 border-b border-red-900/30"
-                        onClick={() => setIsOpen(false)}
-                      >
-                        {item.name}
-                      </Link>
+                      <div>
+                        {item.scrollTo ? (
+                          <button
+                            onClick={() => {
+                              if (item.scrollTo === "top") {
+                                handleScrollToTop()
+                              } else {
+                                handleScrollToSection(item.scrollTo)
+                              }
+                            }}
+                            className="block w-full text-left text-white hover:text-red-500 transition-colors py-2 border-b border-red-900/30"
+                          >
+                            {item.name}
+                          </button>
+                        ) : (
+                          <Link
+                            href={item.href}
+                            className="block text-white hover:text-red-500 transition-colors py-2 border-b border-red-900/30"
+                            onClick={() => setIsOpen(false)}
+                          >
+                            {item.name}
+                          </Link>
+                        )}
+                      </div>
                     )}
                   </div>
                 ))}

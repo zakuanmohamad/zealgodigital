@@ -48,7 +48,7 @@ export default function DownloadPage() {
     const message =
       "Halo ZealGoDigital! Saya berminat dengan resources yang akan datang. Boleh notify saya bila tersedia?"
     const encodedMessage = encodeURIComponent(message)
-    window.open(`https://zealgodigitaltanya.wasap.my/?text=${encodedMessage}`, "_blank")
+    window.open(`https://wa.me/60182461092?text=${encodedMessage}`, "_blank")
   }
 
   return (
@@ -138,7 +138,7 @@ export default function DownloadPage() {
                     <Button
                       onClick={handleComingSoonInquiry}
                       variant="outline"
-                      className="w-full border-gray-600 text-gray-400 hover:bg-gray-800"
+                      className="w-full border-gray-600 text-gray-400 hover:bg-gray-800 bg-transparent"
                     >
                       <MessageCircle className="h-4 w-4 mr-2" />
                       Notify Me
@@ -242,7 +242,7 @@ export default function DownloadPage() {
               const message =
                 "Halo ZealGoDigital! Saya ingin subscribe untuk mendapat updates tentang resources dan content terbaru anda."
               const encodedMessage = encodeURIComponent(message)
-              window.open(`https://zealgodigitaltanya.wasap.my/?text=${encodedMessage}`, "_blank")
+              window.open(`https://wa.me/60182461092?text=${encodedMessage}`, "_blank")
             }}
             size="lg"
             className="bg-blue-600 hover:bg-blue-700 text-white"

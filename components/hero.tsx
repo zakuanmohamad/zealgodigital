@@ -9,7 +9,7 @@ export function Hero() {
     const message =
       "Halo ZealGoDigital! Saya berminat untuk mengetahui lebih lanjut tentang perkhidmatan transformasi digital anda."
     const encodedMessage = encodeURIComponent(message)
-    window.open(`https://zealgodigitaltanya.wasap.my/?text=${encodedMessage}`, "_blank")
+    window.open(`https://wa.me/60182461092?text=${encodedMessage}`, "_blank")
   }
 
   const handleGetStarted = () => {
@@ -51,7 +51,7 @@ export function Hero() {
             <Button
               size="lg"
               variant="outline"
-              className="border-red-500 text-red-500 hover:bg-red-500 hover:text-white px-8 py-4 text-lg"
+              className="border-red-500 text-red-500 hover:bg-red-500 hover:text-white px-8 py-4 text-lg bg-transparent"
             >
               Ketahui Lebih Lanjut
             </Button>
@@ -61,7 +61,7 @@ export function Hero() {
         {/* Quick WhatsApp Button */}
         <div className="mt-8">
           <Button
-            onClick={() => window.open("https://zealgodigitaltanya.wasap.my/", "_blank")}
+            onClick={() => window.open("https://wa.me/60182461092", "_blank")}
             variant="outline"
             className="border-green-500 text-green-500 hover:bg-green-500 hover:text-white"
           >

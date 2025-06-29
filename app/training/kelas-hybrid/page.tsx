@@ -115,7 +115,7 @@ Boleh saya dapatkan maklumat lanjut tentang:
 Terima kasih!`
 
     const encodedMessage = encodeURIComponent(message)
-    window.open(`https://zealgodigitaltanya.wasap.my/?text=${encodedMessage}`, "_blank")
+    window.open(`https://wa.me/60182461092?text=${encodedMessage}`, "_blank")
   }
 
   return (
@@ -290,7 +290,7 @@ Terima kasih!`
               const message =
                 "Halo ZealGoDigital! Saya ingin mendapatkan konsultasi percuma untuk program hybrid training. Boleh kita berbincang?"
               const encodedMessage = encodeURIComponent(message)
-              window.open(`https://zealgodigitaltanya.wasap.my/?text=${encodedMessage}`, "_blank")
+              window.open(`https://wa.me/60182461092?text=${encodedMessage}`, "_blank")
             }}
             size="lg"
             className="bg-purple-600 hover:bg-purple-700 text-white"

@@ -3,6 +3,7 @@
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import { CheckCircle, Users, Award, Zap } from "lucide-react"
+import Link from "next/link"
 
 const stats = [
   { icon: Users, number: "500+", label: "Klien Berpuas Hati" },
@@ -49,9 +50,11 @@ export function About() {
               </div>
             </div>
 
-            <Button size="lg" className="bg-red-600 hover:bg-red-700 text-white">
-              Hubungi Kami Sekarang
-            </Button>
+            <Link href="/hubungi-kami">
+              <Button size="lg" className="bg-red-600 hover:bg-red-700 text-white">
+                Hubungi Kami Sekarang
+              </Button>
+            </Link>
           </div>
 
           <div className="grid grid-cols-2 gap-6">

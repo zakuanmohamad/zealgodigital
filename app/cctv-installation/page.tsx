@@ -111,14 +111,14 @@ Boleh saya dapatkan maklumat lanjut dan jadual pemasangan?
 Terima kasih!`
 
     const encodedMessage = encodeURIComponent(message)
-    window.open(`https://zealgodigitaltanya.wasap.my/?text=${encodedMessage}`, "_blank")
+    window.open(`https://wa.me/60182461092?text=${encodedMessage}`, "_blank")
   }
 
   const handleGeneralInquiry = () => {
     const message =
       "Halo ZealGoDigital! Saya ingin mendapatkan konsultasi dan sebut harga untuk sistem CCTV. Boleh bantu saya?"
     const encodedMessage = encodeURIComponent(message)
-    window.open(`https://zealgodigitaltanya.wasap.my/?text=${encodedMessage}`, "_blank")
+    window.open(`https://wa.me/60182461092?text=${encodedMessage}`, "_blank")
   }
 
   return (
@@ -312,7 +312,7 @@ Terima kasih!`
               Hubungi Kami Sekarang
             </Button>
             <Button
-              onClick={() => window.open("https://zealgodigitaltanya.wasap.my/", "_blank")}
+              onClick={() => window.open("https://wa.me/60182461092", "_blank")}
               size="lg"
               variant="outline"
               className="border-green-500 text-green-500 hover:bg-green-500 hover:text-white"

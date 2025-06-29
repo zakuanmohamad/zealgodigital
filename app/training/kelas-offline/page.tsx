@@ -71,7 +71,7 @@ Boleh saya dapatkan maklumat lanjut tentang:
 Terima kasih!`
 
     const encodedMessage = encodeURIComponent(message)
-    window.open(`https://zealgodigitaltanya.wasap.my/?text=${encodedMessage}`, "_blank")
+    window.open(`https://wa.me/60182461092?text=${encodedMessage}`, "_blank")
   }
 
   return (

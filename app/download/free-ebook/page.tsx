@@ -112,7 +112,7 @@ Boleh saya dapatkan link download atau maklumat cara untuk mendapatkannya?
 Terima kasih!`
 
     const encodedMessage = encodeURIComponent(message)
-    window.open(`https://zealgodigitaltanya.wasap.my/?text=${encodedMessage}`, "_blank")
+    window.open(`https://wa.me/60182461092?text=${encodedMessage}`, "_blank")
   }
 
   const categories = [
@@ -303,7 +303,7 @@ Terima kasih!`
             onClick={() => {
               const message = "Halo ZealGoDigital! Saya perlukan bantuan dengan download ebook. Boleh tolong saya?"
               const encodedMessage = encodeURIComponent(message)
-              window.open(`https://zealgodigitaltanya.wasap.my/?text=${encodedMessage}`, "_blank")
+              window.open(`https://wa.me/60182461092?text=${encodedMessage}`, "_blank")
             }}
             size="lg"
             className="bg-green-600 hover:bg-green-700 text-white"
